@@ -76,7 +76,7 @@ body {
 
 /* DATA */
 .event-date {
-  font-size: 1.75rem;
+  font-size: 0.75rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
