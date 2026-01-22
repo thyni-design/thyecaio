@@ -1,4 +1,7 @@
-/* RESET MÍNIMO */
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap');
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,8 @@
 }
 
 body {
-  font-family: "Times New Roman", serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
 }
 
 /* HERO */
@@ -28,7 +32,7 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(245, 245, 245, 0.7);
+  background: rgba(245, 245, 245, 0.72);
 }
 
 .hero-content {
@@ -40,23 +44,64 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #111;
   padding: 2rem;
 }
 
+/* TÍTULO */
 .title {
-  font-size: 4rem;
-  letter-spacing: 0.05em;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 500;
+  letter-spacing: 0.12em;
 }
 
+.title .script {
+  font-family: 'Great Vibes', cursive;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin: 0 0.2em;
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+/* SUBTÍTULO */
 .subtitle {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
+  opacity: 0.75;
 }
 
-.date {
-  margin-top: 2rem;
+/* ORNAMENTO */
+.ornament {
+  margin: 1.8rem 0 1.2rem;
   font-size: 0.9rem;
-  letter-spacing: 0.15em;
+  opacity: 0.6;
+}
+
+/* DATA */
+.date {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date .divider {
+  opacity: 0.5;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .title {
+    letter-spacing: 0.08em;
+  }
+
+  .subtitle {
+    letter-spacing: 0.25em;
+  }
 }
