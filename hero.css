@@ -1,5 +1,5 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Allura&family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400&display=swap');
 
 /* RESET */
 * {
@@ -49,46 +49,18 @@ body {
   padding: 2rem;
 }
 
-/* SAVE THE DATE – CLONE DO EXEMPLO */
-.save-date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  font-family: 'Cormorant Garamond', serif;
-  text-transform: uppercase;
-  letter-spacing: 0.35em;
-}
-
-.save-date .word {
-  font-size: clamp(3.8rem, 7vw, 5.2rem);
-  font-weight: 500;
-  line-height: 1;
-}
-
-.save-date .save {
-  margin-bottom: 0.2rem;
-}
-
-.save-date .date {
-  margin-top: 0.2rem;
-}
-
-/* SCRIPT “the” */
-.save-date .script {
+/* SAVE THE DATE – MANUSCRITO */
+.title-script {
   font-family: 'Allura', cursive;
-  font-size: 1.4rem;
+  font-size: clamp(3.5rem, 8vw, 5.5rem);
   font-weight: 400;
-  text-transform: lowercase;
-  letter-spacing: 0;
-  opacity: 0.85;
-
-  margin: -0.3rem 0 -0.1rem;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
 }
 
 /* SUBTÍTULO */
 .subtitle {
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
   font-size: 0.65rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
@@ -104,19 +76,14 @@ body {
 
 /* DATA */
 .event-date {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 /* MOBILE */
 @media (max-width: 480px) {
-  .save-date .word {
-    font-size: 3rem;
-    letter-spacing: 0.25em;
-  }
-
-  .save-date .script {
-    font-size: 1.2rem;
+  .title-script {
+    font-size: 3.2rem;
   }
 }
